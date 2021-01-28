@@ -2,7 +2,7 @@
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/lukasmu/laravel-samlite.svg?style=flat-square)](https://packagist.org/packages/lukasmu/laravel-samlite)
 [![Build Status](https://img.shields.io/travis/lukasmu/laravel-samlite/main.svg?style=flat-square)](https://travis-ci.com/github/lukasmu/laravel-samlite)
-[![StyleCI](https://github.styleci.io/repos/261439333/shield?branch=main)](https://github.styleci.io/repos/261439333)
+[![StyleCI](https://github.styleci.io/repos/333802770/shield?branch=main)](https://github.styleci.io/repos/333802770?branch=main)
 [![Total Downloads](https://img.shields.io/packagist/dt/lukasmu/laravel-samlite.svg?style=flat-square)](https://packagist.org/packages/lukasmu/laravel-samlite)
 
 This package can be used to quickly add authentication against SAML2 identity providers to your Laravel application. This package thus makes your Laravel application a SAML2 service provider.
