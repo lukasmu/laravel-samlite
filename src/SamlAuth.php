@@ -1,6 +1,6 @@
 <?php
 
-namespace Aerdes\LaravelSamlite;
+namespace LukasMu\Samlite;
 
 use InvalidArgumentException;
 use OneLogin\Saml2\Auth as OneLogin_Saml2_Auth;

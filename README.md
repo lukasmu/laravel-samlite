@@ -1,9 +1,9 @@
 # Enable authentication against SAML identity providers for your Laravel application
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/aerdes/laravel-samlite.svg?style=flat-square)](https://packagist.org/packages/aerdes/laravel-samlite)
-[![Build Status](https://img.shields.io/travis/aerdes/laravel-samlite/master.svg?style=flat-square)](https://travis-ci.com/github/aerdes/laravel-samlite)
-[![StyleCI](https://github.styleci.io/repos/261439333/shield?branch=master)](https://github.styleci.io/repos/261439333)
-[![Total Downloads](https://img.shields.io/packagist/dt/aerdes/laravel-samlite.svg?style=flat-square)](https://packagist.org/packages/aerdes/laravel-samlite)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/lukasmu/laravel-samlite.svg?style=flat-square)](https://packagist.org/packages/lukasmu/laravel-samlite)
+[![Build Status](https://img.shields.io/travis/lukasmu/laravel-samlite/main.svg?style=flat-square)](https://travis-ci.com/github/lukasmu/laravel-samlite)
+[![StyleCI](https://github.styleci.io/repos/261439333/shield?branch=main)](https://github.styleci.io/repos/261439333)
+[![Total Downloads](https://img.shields.io/packagist/dt/lukasmu/laravel-samlite.svg?style=flat-square)](https://packagist.org/packages/lukasmu/laravel-samlite)
 
 This package can be used to quickly add authentication against SAML2 identity providers to your Laravel application. This package thus makes your Laravel application a SAML2 service provider.
 
@@ -15,7 +15,7 @@ Please note that this package is based on [onelogin/php-saml](https://packagist.
 You can install the package via composer:
 
 ```bash
-composer require aerdes/laravel-samlite
+composer require lukasmu/laravel-samlite
 ```
 
 ## Usage
@@ -41,8 +41,8 @@ You then want to create a Controller that extends the [authentication controller
 
 namespace App\Http\Controllers;
 
-use Aerdes\LaravelSamlite\Http\Controllers\SamlController;
-use Aerdes\LaravelSamlite\SamlAuth;
+use LukasMu\Samlite\Http\Controllers\SamlController;
+use LukasMu\Samlite\SamlAuth;
 
 class AuthenticationController extends SamlController
 {
@@ -75,7 +75,7 @@ SAML_CONTROLLER="App\Http\Controllers\AuthenticationController"
 You can publish the config file with:
 
 ```bash
-php artisan vendor:publish --provider="Aerdes\LaravelSamlite\SamlServiceProvider" --tag="config"
+php artisan vendor:publish --provider="LukasMu\Samlite\SamlServiceProvider" --tag="config"
 ```
 
 Feel free to set the appropriate environmental variables (or edit the config file) in order to add your preferred identity providers.
@@ -98,7 +98,7 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ## Security
 
-If you discover any security related issues, please email [lukas@aerdes.com](mailto:lukas@aerdes.com) instead of using the issue tracker.
+If you discover any security related issues, please email [hello@lukasmu.com](mailto:hello@lukasmu.com) instead of using the issue tracker.
 
 ## Postcardware
 

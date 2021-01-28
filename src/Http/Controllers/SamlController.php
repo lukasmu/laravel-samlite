@@ -1,8 +1,8 @@
 <?php
 
-namespace Aerdes\LaravelSamlite\Http\Controllers;
+namespace LukasMu\Samlite\Http\Controllers;
 
-use Aerdes\LaravelSamlite\SamlAuth;
+use LukasMu\Samlite\SamlAuth;
 use Exception;
 use Illuminate\Contracts\Auth\StatefulGuard;
 use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;

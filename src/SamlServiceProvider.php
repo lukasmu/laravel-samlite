@@ -1,8 +1,8 @@
 <?php
 
-namespace Aerdes\LaravelSamlite;
+namespace LukasMu\Samlite;
 
-use Aerdes\LaravelSamlite\Console\Commands\SamlSetupCommand;
+use LukasMu\Samlite\Console\Commands\SamlSetupCommand;
 use Illuminate\Support\ServiceProvider;
 use OneLogin\Saml2\Utils as OneLogin_Saml2_Utils;
 

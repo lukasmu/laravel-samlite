@@ -1,6 +1,6 @@
 <?php
 
-namespace Aerdes\LaravelSamlite\Console\Commands;
+namespace LukasMu\Samlite\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Console\ConfirmableTrait;

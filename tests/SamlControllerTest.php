@@ -1,8 +1,8 @@
 <?php
 
-namespace Aerdes\LaravelSamlite\Tests;
+namespace LukasMu\Samlite\Tests;
 
-use Aerdes\LaravelSamlite\SamlServiceProvider;
+use LukasMu\Samlite\SamlServiceProvider;
 use Orchestra\Testbench\BrowserKit\TestCase;
 
 class SamlControllerTest extends TestCase

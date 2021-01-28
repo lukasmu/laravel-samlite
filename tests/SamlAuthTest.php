@@ -1,9 +1,9 @@
 <?php
 
-namespace Aerdes\LaravelSamlite\Tests;
+namespace LukasMu\Samlite\Tests;
 
-use Aerdes\LaravelSamlite\SamlAuth;
-use Aerdes\LaravelSamlite\SamlServiceProvider;
+use LukasMu\Samlite\SamlAuth;
+use LukasMu\Samlite\SamlServiceProvider;
 use Orchestra\Testbench\TestCase;
 
 class SamlAuthTest extends TestCase

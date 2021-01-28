@@ -2,7 +2,7 @@
 
 return [
 
-    'controller' => env('SAML_CONTROLLER', 'Aerdes\LaravelSamlite\Http\Controllers\SamlControllerExample'),
+    'controller' => env('SAML_CONTROLLER', 'LukasMu\Samlite\Http\Controllers\SamlControllerExample'),
 
     'idps' => [
         'test' => [

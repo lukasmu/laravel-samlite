@@ -1,29 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<phpunit bootstrap="vendor/autoload.php"
-         backupGlobals="false"
-         backupStaticAttributes="false"
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="./vendor/phpunit/phpunit/phpunit.xsd"
+         bootstrap="vendor/autoload.php"
          colors="true"
          verbose="true"
-         convertErrorsToExceptions="true"
-         convertNoticesToExceptions="true"
-         convertWarningsToExceptions="true"
-         processIsolation="false"
-         stopOnFailure="false">
+>
     <testsuites>
-        <testsuite name="Test Suite">
+        <testsuite name="Feature">
             <directory>tests</directory>
         </testsuite>
     </testsuites>
-    <filter>
-        <whitelist>
+    <coverage processUncoveredFiles="true">
+        <include>
             <directory suffix=".php">src/</directory>
-        </whitelist>
-    </filter>
+        </include>
+    </coverage>
     <logging>
-        <log type="junit" target="build/report.junit.xml"/>
-        <log type="coverage-html" target="build/coverage"/>
-        <log type="coverage-text" target="build/coverage.txt"/>
-        <log type="coverage-clover" target="build/logs/clover.xml"/>
+        <junit outputFile="build/junit.xml"/>
+        <testdoxHtml outputFile="build/coverage.html"/>
+        <testdoxText outputFile="build/coverage.txt"/>
+        <testdoxXml outputFile="build/coverage.xml"/>
     </logging>
     <php>
         <env name="APP_KEY" value="base64:dC6KzbWYyv2VpBa13+NQubat5H9FhkJarqv9wqGpNPY="/>

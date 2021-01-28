@@ -1,8 +1,8 @@
 <?php
 
-namespace Aerdes\LaravelSamlite\Tests;
+namespace LukasMu\Samlite\Tests;
 
-use Aerdes\LaravelSamlite\SamlServiceProvider;
+use LukasMu\Samlite\SamlServiceProvider;
 use Illuminate\Foundation\Bootstrap\LoadEnvironmentVariables;
 use Orchestra\Testbench\TestCase;
 use phpseclib\File\X509;
@@ -10,7 +10,7 @@ use ReflectionClass;
 
 class SamlSetupCommandTest extends TestCase
 {
-    protected $class = 'Aerdes\\LaravelSamlite\\Console\\Commands\\SamlSetupCommand';
+    protected $class = 'LukasMu\\Samlite\\Console\\Commands\\SamlSetupCommand';
     protected $env = __DIR__.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'.env';
 
     protected function getPackageProviders($app)
