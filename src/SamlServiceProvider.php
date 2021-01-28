@@ -2,8 +2,8 @@
 
 namespace LukasMu\Samlite;
 
-use LukasMu\Samlite\Console\Commands\SamlSetupCommand;
 use Illuminate\Support\ServiceProvider;
+use LukasMu\Samlite\Console\Commands\SamlSetupCommand;
 use OneLogin\Saml2\Utils as OneLogin_Saml2_Utils;
 
 class SamlServiceProvider extends ServiceProvider

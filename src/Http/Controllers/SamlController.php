@@ -2,7 +2,6 @@
 
 namespace LukasMu\Samlite\Http\Controllers;
 
-use LukasMu\Samlite\SamlAuth;
 use Exception;
 use Illuminate\Contracts\Auth\StatefulGuard;
 use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
@@ -14,6 +13,7 @@ use Illuminate\Routing\Controller;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\Support\Facades\Auth;
 use InvalidArgumentException;
+use LukasMu\Samlite\SamlAuth;
 use OneLogin\Saml2\Error as OneLogin_Saml2_Error;
 use OneLogin\Saml2\ValidationError;
 
