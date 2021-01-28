@@ -2,8 +2,8 @@
 
 namespace LukasMu\Samlite\Tests;
 
-use LukasMu\Samlite\SamlServiceProvider;
 use Illuminate\Foundation\Bootstrap\LoadEnvironmentVariables;
+use LukasMu\Samlite\SamlServiceProvider;
 use Orchestra\Testbench\TestCase;
 use phpseclib\File\X509;
 use ReflectionClass;
