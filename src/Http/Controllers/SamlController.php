@@ -36,8 +36,9 @@ abstract class SamlController extends Controller
     /**
      * Generate local SAML metadata.
      *
-     * @param SamlAuth $saml_auth
+     * @param  SamlAuth  $saml_auth
      * @return Response
+     *
      * @throws OneLogin_Saml2_Error
      * @throws Exception
      */
@@ -60,8 +61,9 @@ abstract class SamlController extends Controller
     /**
      * Initiate a SAML login request.
      *
-     * @param SamlAuth $saml_auth
+     * @param  SamlAuth  $saml_auth
      * @return RedirectResponse
+     *
      * @throws OneLogin_Saml2_Error
      */
     public function login(SamlAuth $saml_auth, Request $request)
@@ -74,8 +76,9 @@ abstract class SamlController extends Controller
     /**
      * Process an incoming SAML assertion request.
      *
-     * @param SamlAuth $saml_auth
+     * @param  SamlAuth  $saml_auth
      * @return RedirectResponse
+     *
      * @throws OneLogin_Saml2_Error
      * @throws ValidationError
      */
@@ -91,8 +94,9 @@ abstract class SamlController extends Controller
     /**
      * Process an incoming SAML logout request (the user logged out of the SSO infrastructure).
      *
-     * @param SamlAuth $saml_auth
+     * @param  SamlAuth  $saml_auth
      * @return Response
+     *
      * @throws Exception
      */
     public function sls(SamlAuth $saml_auth, Request $request)
@@ -107,9 +111,10 @@ abstract class SamlController extends Controller
     /**
      * Initiate a SAML logout request (log out the user across all the SSO infrastructure).
      *
-     * @param SamlAuth $saml_auth
-     * @param Request $request
+     * @param  SamlAuth  $saml_auth
+     * @param  Request  $request
      * @return RedirectResponse
+     *
      * @throws OneLogin_Saml2_Error
      */
     public function logout(SamlAuth $saml_auth, Request $request)
@@ -129,7 +134,8 @@ abstract class SamlController extends Controller
     /**
      * Validate the login request.
      *
-     * @param SamlAuth $saml_auth
+     * @param  SamlAuth  $saml_auth
+     *
      * @throws OneLogin_Saml2_Error
      * @throws ValidationError
      */
@@ -147,7 +153,8 @@ abstract class SamlController extends Controller
     /**
      * Validate the logout request.
      *
-     * @param SamlAuth $saml_auth
+     * @param  SamlAuth  $saml_auth
+     *
      * @throws OneLogin_Saml2_Error
      * @throws Exception
      */
@@ -164,7 +171,7 @@ abstract class SamlController extends Controller
     /**
      * Get the post login redirect path.
      *
-     * @param SamlAuth $saml_auth
+     * @param  SamlAuth  $saml_auth
      * @return string
      */
     public function redirectPath(SamlAuth $saml_auth)
@@ -201,7 +208,7 @@ abstract class SamlController extends Controller
     /**
      * Logout the user and destroy the session.
      *
-     * @param Request $request
+     * @param  Request  $request
      * @return void
      */
     public function logoutUser(Request $request)
@@ -215,7 +222,7 @@ abstract class SamlController extends Controller
      * Login the user and setup the session.
      * See SamlControllerExample for examples.
      *
-     * @param SamlAuth $saml_auth
+     * @param  SamlAuth  $saml_auth
      * @return void
      */
     abstract public function loginUser(SamlAuth $saml_auth);
