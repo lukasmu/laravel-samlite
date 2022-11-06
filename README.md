@@ -1,9 +1,10 @@
 # Enable authentication against SAML identity providers for your Laravel application
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/lukasmu/laravel-samlite.svg?style=flat-square)](https://packagist.org/packages/lukasmu/laravel-samlite)
-[![Build Status](https://img.shields.io/travis/lukasmu/laravel-samlite/main.svg?style=flat-square)](https://travis-ci.com/github/lukasmu/laravel-samlite)
-[![StyleCI](https://github.styleci.io/repos/333802770/shield?branch=main)](https://github.styleci.io/repos/333802770?branch=main)
-[![Total Downloads](https://img.shields.io/packagist/dt/lukasmu/laravel-samlite.svg?style=flat-square)](https://packagist.org/packages/lukasmu/laravel-samlite)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/lukasmu/laravel-samlite.svg)](https://packagist.org/packages/lukasmu/laravel-samlite)
+[![tests](https://github.com/lukasmu/laravel-samlite/actions/workflows/tests.yml/badge.svg)](https://github.com/lukasmu/laravel-samlite/actions/workflows/tests.yml)
+[![StyleCI](https://github.styleci.io/repos/333802770/shield?branch=main&style=flat)](https://github.styleci.io/repos/333802770?branch=main)
+[![Total Downloads](https://img.shields.io/packagist/dt/lukasmu/laravel-samlite.svg)](https://packagist.org/packages/lukasmu/laravel-samlite)
+[![Coverage Status](https://coveralls.io/repos/github/lukasmu/laravel-samlite/badge.svg?branch=main)](https://coveralls.io/github/lukasmu/laravel-samlite?branch=main)
 
 This package can be used to quickly add authentication against SAML2 identity providers to your Laravel application. This package thus makes your Laravel application a SAML2 service provider.
 
